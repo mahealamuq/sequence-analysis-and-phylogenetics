@@ -1,7 +1,7 @@
 ## Sequence Analysis and Phylogenetics
 
 A Python-based bioinformatics project for protein sequence retrieval, FASTA processing, homolog identification, multiple sequence alignment, evolutionary distance calculation, phylogenetic tree construction, sugar-metabolism annotation, and ancestral active-site reconstruction.
-This repository is based on a Jupyter Notebook workflow for BINF6000 Workshop 2: Sequence Analysis and Phylogenetics.
+This repository is based on a Jupyter Notebook workflow for Sequence Analysis and Phylogenetics.
 
 
 ## Project Overview
