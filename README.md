@@ -1,10 +1,10 @@
-##Sequence Analysis and Phylogenetics
+## Sequence Analysis and Phylogenetics
 
 A Python-based bioinformatics project for protein sequence retrieval, FASTA processing, homolog identification, multiple sequence alignment, evolutionary distance calculation, phylogenetic tree construction, sugar-metabolism annotation, and ancestral active-site reconstruction.
 This repository is based on a Jupyter Notebook workflow for BINF6000 Workshop 2: Sequence Analysis and Phylogenetics.
 
 
-##Project Overview
+## Project Overview
 
 This project analyses biological protein sequences using Python. The workflow begins with retrieving protein sequences from UniProt, processing FASTA files, identifying homologous sequences, aligning protein sequences, calculating evolutionary distances, and constructing phylogenetic trees.
 The final part focuses on the MALS protein family in yeasts. MALS proteins are involved in carbohydrate metabolism, especially sugars such as maltose and isomaltose. The project investigates how sequence variation, active-site changes, and phylogenetic relationships may explain functional differences among MALS proteins.
@@ -131,6 +131,7 @@ The sequence contains invalid characters.
 Header lines do not start with `>`.
 Sequence formatting is incorrect.
 The selected alphabet does not match the sequence type.
+
 ---
 Part B: Sequence Alignment
 Exercise 4: Find Two Putative Homologs
