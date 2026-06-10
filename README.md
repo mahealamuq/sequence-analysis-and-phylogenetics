@@ -20,42 +20,8 @@ Build phylogenetic trees using UPGMA.
 Annotate trees with sugar metabolism data.
 Infer ancestral active-site residues using maximum parsimony.
 
-Repository Structure
 
-```text
-sequence-analysis-phylogenetics/
-│
-├── README.md
-├── requirements.txt
-│
-├── notebooks/
-│   └── workshop_2_assesment.ipynb
-│
-├── scripts/
-│   └── guide.py
-│
-├── data/
-│   ├── MalS.fa
-│   ├── MalS.aln
-│   ├── sugars.csv
-│   ├── dao.fa
-│   └── select.fa
-│
-├── alignment/
-│   └── select.aln
-│
-├── phylogeny/
-│   ├── select_upgma.nwk
-│   └── active_site_tree.nwk
-│
-├── results/
-│   ├── exercise_answers.md
-│   ├── consensus_sequence.txt
-│   └── active_site_mapping.txt
-│
-└── figures/
-    └── phylogenetic_tree.png
-```
+
 ---
 Software Requirements
 This project uses Python and Jupyter Notebook.
@@ -118,6 +84,7 @@ for name in names:
 writeFastaFile('dao.fa', seqs)
 ```
 This saves the retrieved DAO protein sequences into a FASTA file.
+
 ---
 Exercise 3: Processing FASTA Format
 FASTA is a simple biological sequence format. Each sequence begins with a header line starting with `>`, followed by one or more sequence lines.
@@ -162,8 +129,10 @@ for idx in range(len(seqs)):
 print('Closest homolog:', seqs[idx1].name, best1 * 100)
 print('Second closest homolog:', seqs[idx2].name, best2 * 100)
 ```
+
 Interpretation:
 The two sequences with the highest identity values are the closest putative homologs.
+
 ---
 Exercise 5: Consensus Sequence
 A consensus sequence represents the most common amino acid at each alignment column.
@@ -262,6 +231,7 @@ print(tree)
 writeNewickFile('select_upgma.nwk', tree)
 ```
 The output is a Newick tree. It can be copied into a tree viewer or displayed using Python.
+
 ---
 Exercise 11: Annotate Tree With Sugar Metabolism
 Each species is labelled as `True` or `False` depending on whether it can metabolise a sugar.
@@ -309,15 +279,20 @@ full_site_newick = strSites(tree12.root, active_site_cols) + ';'
 
 print(full_site_newick)
 ```
-Interpretation:
+**Interpretation:**
 The labels at the leaf nodes show modern active-site residues. The labels at internal nodes represent ancestral active-site residues inferred using maximum parsimony.
+
 ---
-Final Biological Interpretation
+**Final Biological Interpretation**
+
 The analysis shows that protein sequence variation is connected to evolutionary and functional differences. DAO protein analysis identifies close homologs based on sequence similarity. MALS protein analysis shows that closely related yeast proteins often share similar active-site residues and sugar-metabolism patterns.
 The phylogenetic tree suggests that MALS proteins evolved through gene duplication and divergence. Conserved active-site residues indicate functional constraints, while changes in specific active-site positions likely contributed to differences in substrate specificity, including the ability to metabolise isomaltose.
+
 ---
+
 Example GitHub Description
 Python-based bioinformatics workflow for protein sequence analysis, homolog identification, multiple sequence alignment, evolutionary distance calculation, phylogenetic tree construction, sugar-metabolism annotation, and ancestral active-site reconstruction.
+
 ---
 Suggested Topics
 ```text
@@ -337,6 +312,7 @@ ancestral-reconstruction
 ---
 Author
 Mahe Alam
+
 ---
 License
 MIT License
