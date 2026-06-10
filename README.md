@@ -1,12 +1,16 @@
-Sequence Analysis and Phylogenetics
+##Sequence Analysis and Phylogenetics
+
 A Python-based bioinformatics project for protein sequence retrieval, FASTA processing, homolog identification, multiple sequence alignment, evolutionary distance calculation, phylogenetic tree construction, sugar-metabolism annotation, and ancestral active-site reconstruction.
 This repository is based on a Jupyter Notebook workflow for BINF6000 Workshop 2: Sequence Analysis and Phylogenetics.
----
-Project Overview
+
+
+##Project Overview
+
 This project analyses biological protein sequences using Python. The workflow begins with retrieving protein sequences from UniProt, processing FASTA files, identifying homologous sequences, aligning protein sequences, calculating evolutionary distances, and constructing phylogenetic trees.
 The final part focuses on the MALS protein family in yeasts. MALS proteins are involved in carbohydrate metabolism, especially sugars such as maltose and isomaltose. The project investigates how sequence variation, active-site changes, and phylogenetic relationships may explain functional differences among MALS proteins.
----
-Main Objectives
+
+## Main Objectives
+
 Retrieve protein sequences from online databases.
 Process and interpret FASTA formatted sequence files.
 Identify homologous proteins using sequence similarity.
@@ -15,8 +19,9 @@ Calculate evolutionary distances using fractional, Poisson, and Gamma correction
 Build phylogenetic trees using UPGMA.
 Annotate trees with sugar metabolism data.
 Infer ancestral active-site residues using maximum parsimony.
----
+
 Repository Structure
+
 ```text
 sequence-analysis-phylogenetics/
 │
@@ -78,7 +83,7 @@ Then open:
 ```text
 notebooks/workshop_2_assesment.ipynb
 ```
-Run each section in order.
+## Run each section in order.
 ---
 Assessment Workflow
 Part A: Database Access
