@@ -47,11 +47,11 @@ import matplotlib.pyplot as plt
 ```
 Then open:
 ```text
-notebooks/workshop_2_assesment.ipynb
+workshop_2_assesment.ipynb
 ```
 ## Run each section in order.
 ---
-Assessment Workflow
+Project Workflow
 Part A: Database Access
 Exercise 1: Retrieve and Process a Single Protein
 This exercise retrieves a single protein sequence from UniProt and extracts useful information from the annotation.
