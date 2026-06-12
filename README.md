@@ -51,8 +51,10 @@ workshop_2_assesment.ipynb
 ```
 ## Run each section in order.
 ---
-Project Workflow
+**Project Workflow**
+
 Part A: Database Access
+
 Exercise 1: Retrieve and Process a Single Protein
 This exercise retrieves a single protein sequence from UniProt and extracts useful information from the annotation.
 Main tasks:
@@ -101,6 +103,7 @@ The selected alphabet does not match the sequence type.
 
 ---
 Part B: Sequence Alignment
+
 Exercise 4: Find Two Putative Homologs
 This exercise compares one DAO protein sequence with all other DAO sequences and finds the two closest matches.
 Example code:
@@ -167,6 +170,7 @@ dist = a * ((1 - p) ** (-1.0 / a) - 1)
 ```
 ---
 Part C: Phylogenetic Analysis
+
 Exercise 7: Select MALS Proteins With Sugar Data
 This exercise loads MALS sequences and filters them using species names from `sugars.csv`.
 ```python
@@ -204,6 +208,7 @@ consensus = getConsensus(aln_mals)
 print(consensus)
 ```
 The consensus sequence shows conserved amino acid positions among selected MALS proteins.
+
 ---
 Exercise 9: Active-Site Mapping
 Known active-site columns from the reference MALS alignment are:
